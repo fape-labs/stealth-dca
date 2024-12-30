@@ -1,0 +1,13 @@
+{
+  "from_mint_address": "So11111111111111111111111111111111111111112",
+  "to_mint_address": "GA1UvKdQLi3BQ7jbresAT4JQA7R9K9AZW9X9MvFSuvZk",
+  "interval_seconds": 60,
+  "purchase_size": 0.01, 
+  "overrides": {
+    "private_key": "",
+    "slippage_bps": 100,
+    "priority_fee": 10000,
+    "rpc_endpoint": "https://custom-rpc-endpoint.com",
+    "jup_api_endpoint": "https://custom-jup-api.com/v1"
+  }
+}

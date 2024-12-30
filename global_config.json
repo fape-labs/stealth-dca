@@ -1,0 +1,7 @@
+{
+  "rpc_endpoint": "https://your-rpc-endpoint.com",
+  "private_key": "your-private-key-here",
+  "jup_api_endpoint": "https://quote-api.jup.ag/v6",
+  "slippage_bps": 100,
+  "priority_fee": 5000
+}
