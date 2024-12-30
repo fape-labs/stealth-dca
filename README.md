@@ -37,6 +37,19 @@ To encourage contributions, we reward developers with **USD 50 to USD 1000 worth
 
 Contribute, make a difference, and earn rewards while improving the project! 🚀
 
+We are actively looking for contributions in the following areas and will prioritize rewards for these features:
+
+1. **User-Friendly CLI or Web UI**:
+    - Build a simple, intuitive CLI or a web interface to easily manage DCA jobs.
+    - Make it accessible for non-technical users to create, edit, and monitor DCA jobs.
+
+2. **Custom Destination Wallets**:
+    - Add functionality to specify a destination wallet where purchased tokens can be transferred automatically.
+
+3. **State Management**:
+    - Implement reading and writing job states using a dedicated state file (e.g., `{jobname}.state`).
+    - This should track progress, last execution time, and other relevant metadata for each DCA job.
+
 
 Get involved, improve the project, and earn while you code! 🚀  
 
