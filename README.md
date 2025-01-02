@@ -47,7 +47,7 @@ We are actively looking for contributions in the following areas and will priori
     - Add functionality to specify a destination wallet where purchased tokens can be transferred automatically.
 
 3. **State Management**:
-    - Implement reading and writing job states using a dedicated state file (e.g., `{jobname}.state`).
+    - Implement reading and writing job states using a dedicated state file (e.g., `{jobname}.state`) OR SQLite using https://bun.uptrace.dev/ 
     - This should track progress, last execution time, and other relevant metadata for each DCA job.
 
 
