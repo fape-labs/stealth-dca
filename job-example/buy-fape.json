@@ -2,7 +2,8 @@
   "from_mint_address": "So11111111111111111111111111111111111111112",
   "to_mint_address": "GA1UvKdQLi3BQ7jbresAT4JQA7R9K9AZW9X9MvFSuvZk",
   "interval_seconds": 60,
-  "purchase_size": 0.01, 
+  "purchase_size": 0.01,
+  "order_count": 100,
   "overrides": {
     "private_key": "",
     "slippage_bps": 100,
