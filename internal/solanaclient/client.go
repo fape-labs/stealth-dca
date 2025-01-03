@@ -27,12 +27,17 @@ func NewClient(ctx context.Context, rpcEndpoint, wsEndpoint string) (*Client, er
 	}
 
 	return &Client{
-		RPC: rpc.New(rpcEndpoint),
-		WS:  wsClient,
+		RPC:    rpc.New(rpcEndpoint),
+		WS:     wsClient,
+		keyMap: make(map[string]solana.PrivateKey),
 	}, nil
 }
 
 var ErrTokenAccountNotFound = errors.New("associated token account not found")
+
+func (c *Client) AddSigner(key solana.PrivateKey) {
+	c.keyMap[key.PublicKey().String()] = key
+}
 
 func (c *Client) DeriveAndCheckTokenAccount(owner solana.PublicKey, mint solana.PublicKey) (pubKey *solana.PublicKey, nonce uint8, err error) {
 

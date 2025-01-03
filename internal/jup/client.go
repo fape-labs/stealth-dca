@@ -55,9 +55,9 @@ func (jc *JupClient) GetSwapTx(signer solana.PrivateKey, q *QuoteReseponse) (*Ju
 	swapReqObj := map[string]any{
 		"quoteResponse":             q,
 		"userPublicKey":             signer.PublicKey().String(),
-		"wrapAndUnwrapSol":          false,
+		"wrapAndUnwrapSol":          true,
 		"dynamicComputeUnitLimit":   true,
-		"prioritizationFeeLamports": 100000,
+		"prioritizationFeeLamports": 20000,
 		"useSharedAccounts":         false,
 	}
 
