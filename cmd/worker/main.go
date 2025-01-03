@@ -2,9 +2,9 @@ package main
 
 import (
 	"context"
-	"github.com/fape-labs/stealth-dca/internal/jup"
+	"github.com/fape-labs/solana-agent-kit-go/pkg/jup"
+	"github.com/fape-labs/solana-agent-kit-go/pkg/solanaclient"
 	"github.com/fape-labs/stealth-dca/internal/log"
-	"github.com/fape-labs/stealth-dca/internal/solanaclient"
 	"github.com/gagliardetto/solana-go"
 	"go.uber.org/zap"
 	"time"
@@ -32,6 +32,7 @@ func main() {
 		tx, err := jupClient.Swap(rpcClient, signer, solana.SolMint, fapeMint, amountEach, 100)
 		if err != nil {
 			logger.Error("failed to swap", zap.Error(err))
+			continue
 		}
 
 		logger.Info("swap finished", zap.String("tx", tx.String()))
